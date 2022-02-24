@@ -41,11 +41,40 @@ a:hover {
     overflow-x: hidden;
 }
 
+/*REVISAR EL GRADIENTE COMO AJUSTARLO O SACARLO*/
+main{
+   background-image: linear-gradient(to left bottom, #70C1A7, #C8E7DD, #D5EDE5, #E2F2ED);
+}
+
+.main_div-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main_div-titulo h1 {
     font-family: 'Girassol', cursiva;
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
+    /*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
+    width: 22ch;
+    animation: typing 2s steps(22), parpadeo .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: 3px solid;*/
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes parpadeo {
+  50% {
+    border-color: transparent
+  }
 }
 
 .iconosUx {
@@ -61,6 +90,11 @@ a:hover {
     margin-left: 35px;
     position: relative;
     bottom: -95px;
+}
+
+/*REVISAR EL GRADIENTE COMO AJUSTARLO O SACARLO*/
+footer{
+   background-image: linear-gradient(to right top, #70C1A7, #C8E7DD, #D5EDE5, #E2F2ED);
 }
 
 footer div h3 {
@@ -79,6 +113,40 @@ footer div h3 {
     margin: 20px;
     padding: 20px;
 }
+
+.animacionLK {
+    height: 100px;
+    width: auto;
+    transition: height 0.5s;
+}
+.animacionLK:hover{
+    height: 120px;
+    width: auto;
+}
+
+.animacionIG{
+    height: 100px;
+    width: auto;
+    transition: height 0.5s;
+}
+
+.animacionIG:hover{
+    height: 120px;
+    width: auto;
+}
+
+.animacionBH{
+    height: 100px;
+    width: auto;
+    transition: height 0.5s;
+}
+
+.animacionBH:hover{
+    height: 120px;
+    width: auto;
+}
+
+
 
 /*PESTAÑA CONTACTO*/
 
@@ -104,9 +172,9 @@ footer div h3 {
             "header" 
             "main" 
             "footer";
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 100%;
             grid-template-rows: auto auto auto;
-            grid-row-gap: 20%;
+            /*grid-row-gap: 20%;*/
         }
 
         header{
@@ -177,7 +245,7 @@ footer div h3 {
         "footer";
         grid-template-columns: 100%;
         grid-template-rows: auto;
-        grid-row-gap: 10%;
+        /*grid-row-gap: 10%;*/
     }
 
 header{
