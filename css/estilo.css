@@ -41,11 +41,6 @@ a:hover {
     overflow-x: hidden;
 }
 
-/*REVISAR EL GRADIENTE COMO AJUSTARLO O SACARLO*/
-main{
-   background-image: linear-gradient(to left bottom, #70C1A7, #C8E7DD, #D5EDE5, #E2F2ED);
-}
-
 .main_div-titulo{
     display: flex;
     align-items: center;
@@ -92,10 +87,6 @@ main{
     bottom: -95px;
 }
 
-/*REVISAR EL GRADIENTE COMO AJUSTARLO O SACARLO*/
-footer{
-   background-image: linear-gradient(to right top, #70C1A7, #C8E7DD, #D5EDE5, #E2F2ED);
-}
 
 footer div h3 {
     text-align: center;
@@ -146,6 +137,10 @@ footer div h3 {
     width: auto;
 }
 
+  /*  .backgroundGradient{
+    background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
+    }
+    */
 
 
 /*PESTAÑA CONTACTO*/
@@ -172,9 +167,9 @@ footer div h3 {
             "header" 
             "main" 
             "footer";
-            grid-template-columns: 100%;
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto auto auto;
-            /*grid-row-gap: 20%;*/
+            grid-row-gap: 20%;
         }
 
         header{
@@ -271,7 +266,6 @@ footer{
         .navLista{
             grid-area: navLista;
         }
-
 
     .main-grid{
         display: grid;
