@@ -142,7 +142,6 @@ footer div h3 {
     }
     */
 
-
 /*PESTAÑA CONTACTO*/
 
 .main_contacto {
@@ -152,7 +151,6 @@ footer div h3 {
 .contacto_main-h3 {
     margin: 40px 0px 10px 0px;
 }
-
 
 /*MEDIA QUERIE MOBILE*/
 
@@ -167,7 +165,7 @@ footer div h3 {
             "header" 
             "main" 
             "footer";
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto auto auto;
             grid-row-gap: 20%;
         }
@@ -205,6 +203,14 @@ footer div h3 {
             grid-template-rows: auto auto auto;
         }
 
+        .main_div-titulo{
+            grid-area: main_div-titulo;
+        }
+
+        .main_div-iconosUx{
+            grid-area: main_div-iconosUx;
+        }
+
         .main_div-botones{
             grid-area: main_div-botones;
             display: flex;
@@ -239,31 +245,33 @@ footer div h3 {
         "main" 
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto auto;
         background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
         /*grid-row-gap: 10%;*/
     }
 
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
 
- .header-grid{
+    .header-grid{
             display: grid;
             grid-template-areas:
             "divLogo navLista";
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto;
         }
-                .divLogo{
+
+        .divLogo{
             grid-area: divLogo;
         }
+
         .navLista{
             grid-area: navLista;
         }
@@ -277,6 +285,13 @@ footer{
         grid-template-rows: auto auto;
     }
     
+        .main_div-titulo{
+            grid-area: main_div-titulo;
+        }
+
+        .main_div-iconosUx{
+            grid-area: main_div-iconosUx;
+        }
     
     .footer-grid{
         display: grid;
@@ -284,7 +299,7 @@ footer{
         "fooTitulo"
         "fooLogosRedes";
         grid-template-columns: 100%;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto;
     }
 
     .fooTitulo{
@@ -294,4 +309,74 @@ footer{
     .fooLogosRedes{
         grid-area: fooLogosRedes;
     }
+
+    .gridPadre_div-contacto {
+        display: grid;
+        grid-template-areas: 
+        "header" 
+        "main";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
+    }
+
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+
+    .main_contacto{
+        display: grid;
+        grid-template-areas:
+        "main_div-titulo"
+        "main_form-formularioMapa";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-row-gap: 60px;
+    }
+    
+        .main_div-titulo{
+            grid-area: main_div-titulo;
+        }
+
+        .main_form-formularioMapa{
+            grid-area: main_form-formularioMapa;
+        }
+
+    .main_form-formularioMapa{
+        display: grid;
+        grid-template-areas:
+        "primerColumnaMain segundaColumnaMain";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .primerColumnaMain{
+        grid-area: primerColumnaMain;
+    }
+
+    .segundaColumnaMain{
+        grid-area: segundaColumnaMain;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .posicionSegColMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .iconosRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+    }
+
 }
