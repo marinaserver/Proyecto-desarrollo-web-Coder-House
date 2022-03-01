@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portafolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
 
-<body>
-    <header class="header header-grid">
-        <div>
-            <!-- LOGO -->
-            <img src="../assets/img/logoPortfolioColor-05.png" alt="miLogo" class="logo">
+    <body>
+        <div class="container-fluid">
+            <header class="headerPortafolio">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <!-- LOGO -->
+                    <img src="../assets/img/logoPortfolioColor-05.png" alt="miLogo" class="logo">
+                </div>
+                <div class="col-lg-7 col-12">
+                    <nav class="navLista">
+                        <!-- LISTA NO ORDENADA DEL MENU PRINCIPAL DEL SITIO WEB -->
+                        <ul class="nav_ul-iconos">
+                            <li><a href="../index.html">INICIO</a></li>
+                            <li><a href="servicios.html">SERVICIOS</a></li>
+                            <li><a href="#">PORTAFOLIO</a></li>
+                            <li><a href="sobreMi.html">SOBRE MÍ</a></li>
+                            <li><a href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+            </header>
+            <main> 
+                <div class="row">
+                    <div class="main_div-titulo col-lg-12 col-12">
+                    <h1>PORTAFOLIO</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-12">
+                        <!-- vacio para margen izq -->
+                    </div>
+                    <div class="col-lg-2 col-12 subtitulosPortafolio">
+                        <h3>Diseño e identidad de marca</h3>
+                        <a href=" "><img src="../assets/img/laComunaDeMascotas.png" alt="logoLaComuna" class="imgComuna"></a>
+                    </div>
+                    <div class="col-lg-1 col-12">
+                        <!-- vacio para 1° espacio interno -->
+                    </div>
+                    <div class="col-lg-2 col-12 subtitulosPortafolio">
+                      <h3>Diseño y prototipado de cero UX/UI</h3>
+                      <a href=" "><img src="../assets/img/logoFacto+50.png" alt="logoFactor50" class="logoFactor50"></a>  
+                    </div>
+                    <div class="col-lg-1 col-12">
+                        <!-- vacio para 2° espacio interno -->
+                    </div>
+                    <div class="col-lg-2 col-12 subtitulosPortafolio">
+                      <h3>Rediseño UX/UI nueva funcionalidad PedidosYa</h3>
+                      <a href=" "><img src="../assets/img/logoPeya.png" alt="logoPeya" class="logoPeya"></a>  
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <!-- vacio para margen der -->
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                    <div class="fooLogosRedes col-lg-12 col-12">
+                    <!-- VER COMO ERA PARA LINKEAR REDES SOCIALES -->
+                    <a href=" "><img src="../assets/img/logoLinkedinModif.png" alt="linkedIn " class="footer_icono animacionLK"></a>
+                    <a href=" "><img src="../assets/img/logoInstagramModif.png" alt="instagram " class="footer_icono animacionIG"></a>
+                    <a href=" "><img src="../assets/img/logoBehanceModif.png" alt="behance " class="footer_icono animacionBH"></a>
+                    </div>
+            </footer>
         </div>
-        <nav>
-            <!-- LISTA NO ORDENADA DEL MENU PRINCIPAL DEL SITIO WEB -->
-            <ul class="nav_ul-iconos">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="#">PORTAFOLIO</a></li>
-                <li><a href="sobreMi.html">SOBRE MÍ</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="main_div-titulo">
-            <h1>PORTAFOLIO</h1>
-        </div>
-    </main>
-    <footer class="footer">
-        <div>
-            <h3>REDES SOCIALES</h3>
-            <!-- VER COMO ERA PARA LINKEAR REDES SOCIALES -->
-            <a href=""><img src="../assets/img/logoLinkedinModif.png" alt="linkedIn" class="footer_icono"></a>
-            <a href=""><img src="../assets/img/logoInstagramModif.png" alt="instagram" class="footer_icono"></a>
-            <a href=""><img src="../assets/img/logoBehanceModif.png" alt="behance" class="footer_icono"></a>
-        </div>
-    </footer>
-
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </body>
 </html>

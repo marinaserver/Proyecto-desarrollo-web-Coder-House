@@ -9,8 +9,13 @@
     background-color: lightgrey;
     top: 0;
     height: 190px;
-    /*width: 1350px;*/
+    width: auto;
     display: flex;
+}
+
+.headerPortafolio{
+    background-color: lightgrey;
+    height: 190px;
 }
 
 header nav ul li {
@@ -40,7 +45,7 @@ a:hover {
 .body_index {
     overflow-x: hidden;
 }
-
+/*CENTRAR TITULO PARA ANIMACION*/
 .main_div-titulo{
     display: flex;
     align-items: center;
@@ -52,7 +57,7 @@ a:hover {
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
-    /*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
+/*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
     width: 22ch;
     animation: typing 2s steps(22), parpadeo .5s step-end infinite alternate;
     white-space: nowrap;
@@ -71,7 +76,7 @@ a:hover {
     border-color: transparent
   }
 }
-
+/*FIN ANIMACION MAQUINA DE ESCRIBIR*/
 .iconosUx {
     width: 700px;
     height: auto;
@@ -87,6 +92,30 @@ a:hover {
     bottom: -95px;
 }
 
+.subtitulosPortafolio h3{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.imgComuna{
+    width: 200px;
+    height: auto;
+    padding-top: 25px;
+}
+
+.logoFactor50{
+    width: 200px;
+    height: auto;
+    padding-top: 45px;
+}
+
+.logoPeya{
+    width: 200px;
+    height: auto;
+
+}
 
 footer div h3 {
     text-align: center;
@@ -104,7 +133,7 @@ footer div h3 {
     margin: 20px;
     padding: 20px;
 }
-
+/*ANIMACIONES ICONOS REDES SOCIALES*/
 .animacionLK {
     height: 100px;
     width: auto;
@@ -136,6 +165,7 @@ footer div h3 {
     height: 120px;
     width: auto;
 }
+/*FIN ANIMACION ICONOS REDES SOCIALES*/
 
   /*  .backgroundGradient{
     background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
@@ -155,81 +185,137 @@ footer div h3 {
 /*MEDIA QUERIE MOBILE*/
 
 @media only screen and (max-width: 768px) {
-        .navLista ul{
-            display: none;
-        }
 
-        .gridPadre_div-index {
-            display: grid;
-            grid-template-areas: 
-            "header" 
-            "main" 
-            "footer";
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: auto auto auto;
-            grid-row-gap: 20%;
-        }
-
-        header{
-            grid-area: header;
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
-
-        .header-grid{
-            grid-template-areas:
-            "divLogo navLista";
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-        }
-        .divLogo{
-            grid-area: divLogo;
-        }
-        .navLista{
-            grid-area: navLista;
-        }
-
-        .main-grid{
-            display: grid;
-            grid-template-areas:
-            "main_div-titulo"
-            "main_div-iconosUx"
-            "main_div-botones";
-            grid-template-columns: 100%;
-            grid-template-rows: auto auto auto;
-        }
-
-        .main_div-titulo{
-            grid-area: main_div-titulo;
-        }
-
-        .main_div-iconosUx{
-            grid-area: main_div-iconosUx;
-        }
-
-        .main_div-botones{
-            grid-area: main_div-botones;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        footer div h3{
-            display: none;
-        }
-
-        .botonMobileIndex{
-            margin: 20px;
-            width: 300px;
-            height: 37px;
-            background-color: #70C1A7;
-        }
-
+    .main_div-titulo h1{
+        font-size: 35px;
     }
+
+    .navLista ul{
+        display: none;
+    }
+
+    .gridPadre_div-index {
+        display: grid;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 20%;
+    }
+
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    .header-grid{
+        grid-template-areas:
+        "divLogo navLista";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .divLogo{
+        grid-area: divLogo;
+    }
+    .navLista{
+        grid-area: navLista;
+    }
+
+    .main-grid{
+        display: grid;
+        grid-template-areas:
+        "main_div-titulo"
+        "main_div-iconosUx"
+        "main_div-botones";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .main_div-titulo{
+        grid-area: main_div-titulo;
+    }
+
+    .main_div-iconosUx{
+        grid-area: main_div-iconosUx;
+    }
+
+    .main_div-botones{
+        grid-area: main_div-botones;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div h3{
+        display: none;
+    }
+
+    .botonMobileIndex{
+        margin: 20px;
+        width: 300px;
+        height: 37px;
+        background-color: #70C1A7;
+    }
+
+    /*BOX MODELING PORTAFOLIO PARA VISTA MOBILE*/
+
+    .logo {
+        margin-left: 8px;
+        position: relative;
+        bottom: -51px;
+        width: 70px;
+        height: auto;
+    }
+
+    .headerPortafolio {
+        height: 100px;
+    }
+
+    .subtitulosPortafolio h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .subtitulosPortafolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fooLogosRedes{
+        margin-top: 60px;
+    }
+
+    .footer_icono {
+        margin: 5px;
+        padding: 5px;
+        height: 60px;
+        width: auto;
+    }
+
+    .imgComuna{
+        width: 150px;
+        height: auto;
+    }
+
+    .logoFactor50{
+        width: 150px;
+        height: auto;
+    }
+
+    .logoPeya{
+        width: 150px;
+        height: auto;
+    }
+
+}
 
 /*MEDIA QUERIE DESKTOP*/
 
