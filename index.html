@@ -19,57 +19,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 </head>
 
-<body class="body_index">
-    <div class="gridPadre_div-index">
-        <header class="header header-grid">
-            <div class="divLogo">
-                <!-- LOGO -->
-                <img src="assets/img/logoPortfolioColor-05.png" alt="miLogo" class="logo">
+<body class="body">
+    <div class="container-fluid px-0">
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <!-- LOGO -->
+                    <img src="assets/img/logoPortfolioColor-05.png" alt="miLogo" class="logo">
+                </div>
+                <div class="col-lg-3 col-12">
+                    
+                </div>
+                <div class="col-lg-7 col-12">
+                    <nav class="navLista">
+                        <!-- MENU PRINCIPAL DEL SITIO WEB -->
+                        <ul class="nav_ul-iconos">
+                            <li><a href="#">INICIO</a></li>
+                            <li><a href="views/servicios.html">SERVICIOS</a></li>
+                            <li><a href="views/portafolio.html">PORTAFOLIO</a></li>
+                            <li><a href="views/sobreMi.html">SOBRE MÍ</a></li>
+                            <li><a href="views/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="navLista">
-                <!-- MENU PRINCIPAL DEL SITIO WEB -->
-                <ul class="nav_ul-iconos">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="views/servicios.html">SERVICIOS</a></li>
-                    <li><a href="views/portafolio.html">PORTAFOLIO</a></li>
-                    <li><a href="views/sobreMi.html">SOBRE MÍ</a></li>
-                    <li><a href="views/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
         </header>
-        <!-- <div class="backgroundGradient"> -->
-            <main class="main-grid">
-                <div class="main_div-titulo">
-                    <h1>DESARROLLADORA UX/UI</h1>
+            <main>
+                <div class="row">
+                    <div class="main_div-titulo col-lg-12 col-12">
+                        <h1>DESARROLLADORA UX/UI</h1>
+                    </div>
                 </div>
-                <div class="main_div-iconosUx">
-                    <!-- CAMBIAR IMAGEN DE FONDO POR FONDO VECTORIAL-->
-                    <img src="assets/img/fondoIconosModif.png" alt="iconosUx" class="iconosUx">
-                </div>
+                <div class="centrarBotones row">
+                    <div class="main_div-iconosUx col-lg-12 col-12">
+                        <p>
+                        <br><br><br><br><br><br> 
+                        </p>
+                        <!-- CAMBIAR IMAGEN DE FONDO POR FONDO VECTORIAL-->
+                       <!--  <img src="assets/img/fondoIconosModif.png" alt="iconosUx" class="iconosUx"> -->
+                    </div>
 
-                <!-- BOTONES MOBILE -->
-                <div class="main_div-botones">
-                    <input type="button" onclick="location.href='views/servicios.html'" value="SERVICIOS" class="botonMobileIndex">
-                    <input type="button" onclick="location.href='views/portafolio.html'" value="PORTAFOLIO" class="botonMobileIndex">
-                    <input type="button" onclick="location.href='views/sobreMi.html'" value="SOBRE MÍ" class="botonMobileIndex">
-                    <input type="button" onclick="location.href='views/contacto.html'" value="CONTACTO" class="botonMobileIndex">
+                    <!-- BOTONES MOBILE -->
+                    <div class="main_div-botones">
+                        <input type="button" onclick="location.href='views/servicios.html'" value="SERVICIOS" class="botonMobileIndex">
+                        <input type="button" onclick="location.href='views/portafolio.html'" value="PORTAFOLIO" class="botonMobileIndex">
+                        <input type="button" onclick="location.href='views/sobreMi.html'" value="SOBRE MÍ" class="botonMobileIndex">
+                        <input type="button" onclick="location.href='views/contacto.html'" value="CONTACTO" class="botonMobileIndex">
+                    </div>
                 </div>
 
             </main>
-            <footer class="footer footer-grid">
-                <div class="fooTitulo">
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
                     <h3>REDES SOCIALES</h3>
+                    </div>
                 </div>
-                <div class="fooLogosRedes">
-                    <!-- VER COMO ERA PARA LINKEAR REDES SOCIALES -->
-                    <a href=" "><img src="assets/img/logoLinkedinModif.png" alt="linkedIn " class="footer_icono animacionLK"></a>
-                    <a href=" "><img src="assets/img/logoInstagramModif.png" alt="instagram " class="footer_icono animacionIG"></a>
-                    <a href=" "><img src="assets/img/logoBehanceModif.png" alt="behance " class="footer_icono animacionBH"></a>
+                <div class="row">
+                    <div class="fooLogosRedes col-lg-12 col-12">
+                        <!-- VER COMO ERA PARA LINKEAR REDES SOCIALES -->
+                        <a href=" "><img src="assets/img/logoLinkedinModif.png" alt="linkedIn " class="footer_icono animacionLK"></a>
+                        <a href=" "><img src="assets/img/logoInstagramModif.png" alt="instagram " class="footer_icono animacionIG"></a>
+                        <a href=" "><img src="assets/img/logoBehanceModif.png" alt="behance " class="footer_icono animacionBH"></a>
+                    </div>
                 </div>
             </footer>
-        <!-- </div> -->
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>

@@ -7,10 +7,8 @@
 
 .header {
     background-color: lightgrey;
-    top: 0;
     height: 190px;
-    width: auto;
-    display: flex;
+
 }
 
 .headerPortafolio{
@@ -42,8 +40,9 @@ a:hover {
     color: grey;
 }
 
-.body_index {
+.body {
     overflow-x: hidden;
+    background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
 }
 /*CENTRAR TITULO PARA ANIMACION*/
 .main_div-titulo{
@@ -247,7 +246,6 @@ footer div h3 {
     }
 
     .main_div-botones{
-        grid-area: main_div-botones;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -257,9 +255,14 @@ footer div h3 {
         display: none;
     }
 
+    .centrarBotones{
+        display: flex;
+        justify-content: center;
+    }
+
     .botonMobileIndex{
         margin: 20px;
-        width: 300px;
+        width: 250px;
         height: 37px;
         background-color: #70C1A7;
     }
@@ -275,6 +278,10 @@ footer div h3 {
     }
 
     .headerPortafolio {
+        height: 100px;
+    }
+
+    .header{
         height: 100px;
     }
 
@@ -320,6 +327,8 @@ footer div h3 {
 /*MEDIA QUERIE DESKTOP*/
 
 @media only screen and (min-width: 1024px) {
+
+    /*LINEA IMPORTANTE PARA QUE LOS BOTONES VERDES SOLO SE VEAN EN MOBILE*/
     .main_div-botones{
         display: none;
     }
@@ -332,7 +341,6 @@ footer div h3 {
         "footer";
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
-        background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
         /*grid-row-gap: 10%;*/
     }
 
