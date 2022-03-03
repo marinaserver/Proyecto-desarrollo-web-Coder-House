@@ -17,7 +17,7 @@
 }
 
 header nav ul li {
-    padding: 10px;
+    paddincollapse
 }
 
 .nav_ul-iconos {
@@ -34,6 +34,11 @@ header nav ul li {
     color: black;
     font-size: 20px;
     margin: 10px;
+}
+
+/*PESTAÑA SERVICIOS COLOR FONDO MENU HAMBURGUESA*/
+.bg-light{
+    background-color: lightgrey!important;
 }
 
 a:hover {
@@ -89,6 +94,10 @@ a:hover {
     margin-left: 35px;
     position: relative;
     bottom: -95px;
+}
+
+.logoServicios {
+    bottom:  21px;
 }
 
 .subtitulosPortafolio h3{
@@ -193,58 +202,6 @@ footer div h3 {
         display: none;
     }
 
-    .gridPadre_div-index {
-        display: grid;
-        grid-template-areas: 
-        "header" 
-        "main" 
-        "footer";
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-row-gap: 20%;
-    }
-
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-
-    .header-grid{
-        grid-template-areas:
-        "divLogo navLista";
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-    .divLogo{
-        grid-area: divLogo;
-    }
-    .navLista{
-        grid-area: navLista;
-    }
-
-    .main-grid{
-        display: grid;
-        grid-template-areas:
-        "main_div-titulo"
-        "main_div-iconosUx"
-        "main_div-botones";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-    }
-
-    .main_div-titulo{
-        grid-area: main_div-titulo;
-    }
-
-    .main_div-iconosUx{
-        grid-area: main_div-iconosUx;
-    }
-
     .main_div-botones{
         display: flex;
         flex-direction: column;
@@ -275,6 +232,11 @@ footer div h3 {
         bottom: -51px;
         width: 70px;
         height: auto;
+    }
+
+     /*UBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
+    .logoServicios{
+    bottom: 5px;
     }
 
     .headerPortafolio {
@@ -333,78 +295,8 @@ footer div h3 {
         display: none;
     }
 
-    .gridPadre_div-index {
-        display: grid;
-        grid-template-areas: 
-        "header" 
-        "main" 
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        /*grid-row-gap: 10%;*/
-    }
-
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-
-    .header-grid{
-            display: grid;
-            grid-template-areas:
-            "divLogo navLista";
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: auto;
-        }
-
-        .divLogo{
-            grid-area: divLogo;
-        }
-
-        .navLista{
-            grid-area: navLista;
-        }
-
-    .main-grid{
-        display: grid;
-        grid-template-areas:
-        "main_div-titulo"
-        "main_div-iconosUx";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-    }
-    
-        .main_div-titulo{
-            grid-area: main_div-titulo;
-        }
-
-        .main_div-iconosUx{
-            grid-area: main_div-iconosUx;
-        }
-    
-    .footer-grid{
-        display: grid;
-        grid-template-areas: 
-        "fooTitulo"
-        "fooLogosRedes";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-    }
-
-    .fooTitulo{
-        grid-area: fooTitulo;
-    }
-
-    .fooLogosRedes{
-        grid-area: fooLogosRedes;
-    }
-
-    .gridPadre_div-contacto {
+    /*GRID DE PESTAÑA CONTACTO REEMPLAZAR POR BOOSTRAP*/
+        .gridPadre_div-contacto {
         display: grid;
         grid-template-areas: 
         "header" 
@@ -469,8 +361,15 @@ footer div h3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 20px;
-        
+        margin-top: 20px;   
+    }
+
+    /*FIN GRID PESTAÑA CONTACTO*/
+
+    /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
+    .collapse {
+    display: flex;
+    justify-content: flex-end;
     }
 
 }
