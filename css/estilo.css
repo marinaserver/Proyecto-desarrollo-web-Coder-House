@@ -25,8 +25,7 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /*margin-left: 400px;*/
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .nav_ul-iconos a {
@@ -93,12 +92,9 @@ a:hover {
 .logo {
     margin-left: 35px;
     position: relative;
-    bottom: -95px;
+    bottom: -82px;
 }
 
-.logoServicios {
-    bottom:  21px;
-}
 
 .subtitulosPortafolio h3{
     font-size: 25px;
@@ -190,6 +186,7 @@ footer div h3 {
     margin: 40px 0px 10px 0px;
 }
 
+
 /*MEDIA QUERIE MOBILE*/
 
 @media only screen and (max-width: 768px) {
@@ -229,12 +226,12 @@ footer div h3 {
     .logo {
         margin-left: 8px;
         position: relative;
-        bottom: -51px;
+        bottom: -39px;
         width: 70px;
         height: auto;
     }
 
-     /*UBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
+     /*HUBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
     .logoServicios{
     bottom: 5px;
     }
@@ -283,6 +280,13 @@ footer div h3 {
         width: 150px;
         height: auto;
     }
+
+    /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
+      .collapse {
+    display: flex;
+    justify-content: flex-end;
+    }
+
 
 }
 
@@ -367,7 +371,7 @@ footer div h3 {
     /*FIN GRID PESTAÑA CONTACTO*/
 
     /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
-    .collapse {
+    .navbar-collapse {
     display: flex;
     justify-content: flex-end;
     }
