@@ -87,11 +87,20 @@ a:hover {
     bottom: -82px;
 }
 
-.subtitulosPortafolio h3{
+.subtitulos h3{
     font-size: 25px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+.subtitulos{
+    text-align: center;   
+}
+
+.subtitulosServicios h3{
+    border-radius: 10px;
+    background-color: #70c1a7;
 }
 
 .imgComuna{
@@ -112,15 +121,26 @@ a:hover {
 
 }
 
+/*VER PORQUE NO ANDA EL FONDO DEL FOOTER
+.footer{
+    background-image: url("..assets/img/fondoIconosVECTORIAL.png");
+    background-size: cover;
+}*/
+
 footer div h3 {
     text-align: center;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 /* PARA CENTRAR ICONOS*/
 .fooLogosRedes{
     display: flex;
     justify-content: center;
+}
+
+.fooLogosRedesSinTitulo{
+    margin-top: 50px;
 }
 
 /*PARA SEPARAR ICONOS ENTRE ELLOS*/
@@ -162,11 +182,6 @@ footer div h3 {
 }
 /*FIN ANIMACION ICONOS REDES SOCIALES*/
 
-  /*  .backgroundGradient{
-    background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white);
-    }
-    */
-
 /*PESTAÑA CONTACTO*/
 
 .main_contacto {
@@ -180,6 +195,14 @@ footer div h3 {
 .centrarImgUx{
     display: flex;
     justify-content: center;
+}
+
+/*PESTAÑA SERVICIOS*/
+
+.espaciosServicios {
+    margin: 35px;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*MEDIA QUERIE MOBILE*/
