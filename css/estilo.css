@@ -80,21 +80,12 @@ a:hover {
   }
 }
 /*FIN ANIMACION MAQUINA DE ESCRIBIR*/
-.iconosUx {
-    width: 700px;
-    height: auto;
-    margin: auto;
-    /*ver porque con el flex 
-    solo se centra sin que le ponga justify content*/
-    display: flex;
-}
 
 .logo {
     margin-left: 35px;
     position: relative;
     bottom: -82px;
 }
-
 
 .subtitulosPortafolio h3{
     font-size: 25px;
@@ -186,13 +177,29 @@ footer div h3 {
     margin: 40px 0px 10px 0px;
 }
 
+.centrarImgUx{
+    display: flex;
+    justify-content: center;
+}
 
 /*MEDIA QUERIE MOBILE*/
 
 @media only screen and (max-width: 768px) {
 
+    /*IMPORTANTE PARA QUE NO SE ROMPA EL MOBILE*/
+    .iconosUxDesktop{
+        display: none;
+    }
+
+    .iconosUxMobile{
+        width: 250px;
+        height: auto;
+    }
+    /*FIN DEL IMPORTANTE*/
+
     .main_div-titulo h1{
-        font-size: 35px;
+        font-size: 30px;
+        padding-top: 50px;
     }
 
     .navLista ul{
@@ -231,7 +238,7 @@ footer div h3 {
         height: auto;
     }
 
-     /*HUBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
+     /*UBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
     .logoServicios{
     bottom: 5px;
     }
@@ -255,8 +262,15 @@ footer div h3 {
         align-items: center;
     }
 
+    /*FIN PESTAÑA SERVICIOS*/
+
     .fooLogosRedes{
         margin-top: 60px;
+        background-color:#C8E7DD;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 50px;
+        border-radius: 25px;
     }
 
     .footer_icono {
@@ -297,6 +311,15 @@ footer div h3 {
     /*LINEA IMPORTANTE PARA QUE LOS BOTONES VERDES SOLO SE VEAN EN MOBILE*/
     .main_div-botones{
         display: none;
+    }
+
+    .iconosUxMobile{
+        display: none;
+    }
+
+    .iconosUxDesktop{
+        width: 600px;
+        height: auto;
     }
 
     /*GRID DE PESTAÑA CONTACTO REEMPLAZAR POR BOOSTRAP*/
@@ -374,6 +397,13 @@ footer div h3 {
     .navbar-collapse {
     display: flex;
     justify-content: flex-end;
+    }
+
+    .fooLogosRedes{
+        background-color:#C8E7DD;
+        margin-left: 400px;
+        margin-right: 400px;
+        border-radius: 25px;
     }
 
 }
