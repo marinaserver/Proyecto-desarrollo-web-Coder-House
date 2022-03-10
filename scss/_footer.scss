@@ -1,0 +1,97 @@
+/*VER PORQUE NO ANDA EL FONDO DEL FOOTER
+.footer{
+    background-image: url("..assets/img/fondoIconosVECTORIAL.png");
+    background-size: cover;
+}*/
+footer div h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+/* PARA CENTRAR ICONOS*/
+.fooLogosRedes {
+  display: flex;
+  justify-content: center;
+}
+
+.fooLogosRedesSinTitulo {
+  margin-top: 50px;
+}
+
+/*PARA SEPARAR ICONOS ENTRE ELLOS*/
+.footer_icono {
+  margin: 20px;
+  padding: 20px;
+}
+
+/*ANIMACIONES ICONOS REDES SOCIALES*/
+.animacionLK {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionLK:hover {
+  height: 120px;
+  width: auto;
+}
+
+.animacionIG {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionIG:hover {
+  height: 120px;
+  width: auto;
+}
+
+.animacionBH {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionBH:hover {
+  height: 120px;
+  width: auto;
+}
+
+/*FIN ANIMACION ICONOS REDES SOCIALES*/
+
+/*MEDIA QUERIE MOBILE*/
+@media only screen and (max-width:768px) {
+  footer div h3 {
+    display: none;
+  }
+
+  .fooLogosRedes {
+    margin-top: 60px;
+    background-color: $colorTerciario;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+  }
+
+  .footer_icono {
+    margin: 5px;
+    padding: 5px;
+    height: 60px;
+    width: auto;
+  }
+
+}
+
+/*MEDIA QUERIE DESKTOP*/
+@media only screen and (min-width:1024px) {
+  .fooLogosRedes {
+    background-color: $colorTerciario;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 25px;
+  }
+
+}

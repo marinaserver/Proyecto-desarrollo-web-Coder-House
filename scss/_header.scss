@@ -1,0 +1,92 @@
+.header {
+  background-color: $colorSecundario;
+  height: 190px;
+}
+
+.headerPortafolio {
+  background-color: $colorSecundario;
+  height: 190px;
+}
+
+header nav ul li {
+  padding: 10px;
+}
+
+.nav_ul-iconos {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.nav_ul-iconos a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/*PESTAÑA SERVICIOS COLOR FONDO NAV MENU HAMBURGUESA*/
+.bg-light {
+  background-color: $colorSecundario !important;
+}
+
+a:hover {
+  color: grey;
+}
+
+.logo {
+  margin-left: 35px;
+  position: relative;
+  bottom: -82px;
+}
+
+/*MEDIA QUERIE MOBILE*/
+@media only screen and (max-width:768px) {
+  .navLista ul {
+    display: none;
+  }
+
+  /*BOX MODELING PORTAFOLIO PARA VISTA MOBILE*/
+  .logo {
+    margin-left: 8px;
+    position: relative;
+    bottom: -39px;
+    width: 70px;
+    height: auto;
+  }
+
+  /*UBICAR LOGO EN VISTA MOBILE PESTAÑA SERVICIOS*/
+  .logoServicios {
+    bottom: 5px;
+  }
+
+  .headerPortafolio {
+    height: 100px;
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  /*FIN PESTAÑA SERVICIOS*/
+
+  /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
+  .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+/*MEDIA QUERIE DESKTOP*/
+@media only screen and (min-width:1024px) {
+
+  /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
