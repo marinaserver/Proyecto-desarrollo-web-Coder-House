@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*COLORES*/
+/*TIPOGRAFIAS*/
+/*MAPS*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@
 
 .body {
   overflow-x: hidden;
-  background-image: linear-gradient(30deg, #70C1A7, #C8E7DD, #D5EDE5, white); }
+  background-image: linear-gradient(30deg, #70C1A7, #bae2d3, #D5EDE5, white); }
 
 .header {
   background-color: lightgrey;
@@ -19,7 +22,6 @@ header nav ul li {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   margin-top: 30px; }
   .nav_ul-iconos a {
     text-decoration: none;
@@ -56,15 +58,13 @@ a:hover {
     height: 100px; }
   /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
   .collapse {
-    display: flex;
-    justify-content: flex-end; } }
+    display: flex; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
   /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
   .navbar-collapse {
-    display: flex;
-    justify-content: flex-end; } }
+    display: flex; } }
 
 /*CENTRAR TITULO PARA ANIMACION*/
 .main_div-titulo {
@@ -152,7 +152,7 @@ a:hover {
   .centrarBotones {
     display: flex;
     justify-content: center; }
-  .botonMobileIndex, .botonPortafolio, .botonSobreMi, .botonContacto {
+  .botonMobileBase, .botonServicios, .botonPortafolio, .botonSobreMi, .botonContacto {
     margin: 20px;
     width: 250px;
     height: 37px;
@@ -162,7 +162,7 @@ a:hover {
   .botonSobreMi {
     background-color: #a3d3c2; }
   .botonContacto {
-    background-color: #C8E7DD; }
+    background-color: #bae2d3; }
   .subtitulosPortafolio {
     display: flex;
     flex-direction: column;
@@ -250,7 +250,7 @@ footer div h3 {
     display: none; }
   .fooLogosRedes {
     margin-top: 60px;
-    background-color: #C8E7DD;
+    background-color: #bae2d3;
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 50px;
@@ -264,7 +264,7 @@ footer div h3 {
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
   .fooLogosRedes {
-    background-color: #C8E7DD;
+    background-color: #bae2d3;
     margin-left: 400px;
     margin-right: 400px;
     border-radius: 25px; } }

@@ -11,7 +11,7 @@ header nav ul li {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: map-get($alineacion,justificadorDer);
   margin-top: 30px;
 
 a {
@@ -63,7 +63,7 @@ a:hover {
   /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
   .collapse {
     display: flex;
-    justify-content:flex-end;
+    justify-content:map-get($alineacion,justificadorDer);
   }
 
 }
@@ -74,7 +74,7 @@ a:hover {
   /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
   .navbar-collapse {
     display: flex;
-    justify-content: flex-end;
+    justify-content:map-get($alineacion,justificadorDer);
   }
 
 }

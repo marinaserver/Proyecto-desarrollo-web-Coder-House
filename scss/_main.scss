@@ -1,13 +1,13 @@
 /*CENTRAR TITULO PARA ANIMACION*/
 .main_div-titulo {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: map-get($alineacion,centrar);
+  justify-content: map-get($alineacion,centrar);
 
   h1 {
     font-family: $tipografiaPrimaria;
     font-size: 40px;
-    text-align: center;
+    text-align: map-get($alineacion,centrar);
     margin-top: 50px;  /*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
     width: 22ch;
     animation: typing 2s steps(22), parpadeo 0.5s step-end infinite alternate;
@@ -20,7 +20,6 @@
   from {
     width: 0;
   }
-
 }
 
 @keyframes parpadeo {
@@ -32,11 +31,11 @@
 /*FIN ANIMACION MAQUINA DE ESCRIBIR*/
 
 .subtitulos {
-  text-align: center;
+  text-align: map-get($alineacion,centrar);
 
   h3 {
     font-size: 25px;
-    text-align: center;
+    text-align: map-get($alineacion,centrar);
     margin-top: 30px;
     margin-bottom: 20px;
     }
@@ -74,7 +73,7 @@
 
 .centrarImgUx {
   display: flex;
-  justify-content: center;
+  justify-content: map-get($alineacion,centrar);
 }
 
 /*PESTAÑA SERVICIOS*/
@@ -105,44 +104,48 @@
   .main_div-botones {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: map-get($alineacion,centrar);
   }
 
   .centrarBotones {
     display: flex;
-    justify-content: center;
+    justify-content: map-get($alineacion,centrar);
   }
 
-  .botonMobileIndex {
+  .botonMobileBase {
     margin: 20px;
     width: 250px;
     height: 37px;
     background-color: $colorPrincipal;
   }
 
+  .botonServicios {
+    @extend .botonMobileBase;
+  }
+
   .botonPortafolio {
-    @extend .botonMobileIndex;
+    @extend .botonMobileBase;
     background-color: #89c9b2;
   }
 
   .botonSobreMi {
-    @extend .botonMobileIndex;
+    @extend .botonMobileBase;
     background-color: #a3d3c2;
   }
 
   .botonContacto{
-    @extend .botonMobileIndex;
+    @extend .botonMobileBase;
     background-color: $colorTerciario;
   }
 
   .subtitulosPortafolio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: map-get($alineacion,centrar);
 
     h3 {
       font-size: 20px;
-      text-align: center;
+      text-align: map-get($alineacion,centrar);
       }
   }
 

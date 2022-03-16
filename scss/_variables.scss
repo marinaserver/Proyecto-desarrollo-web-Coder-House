@@ -1,5 +1,14 @@
+/*COLORES*/
 $colorPrincipal: #70C1A7;
 $colorSecundario: lightgrey;
-$colorTerciario: #C8E7DD;
+$colorTerciario: #bae2d3;
+
+/*TIPOGRAFIAS*/
 $tipografiaPrimaria: 'Girassol', cursiva;
 $tipografiaSecundaria: 'Roboto', sans-serif;
+
+/*MAPS*/
+$alineacion:(
+  justificadoDer: flex-end,
+  centrar: center
+  );
