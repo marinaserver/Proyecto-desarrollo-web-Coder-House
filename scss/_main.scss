@@ -3,17 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.main_div-titulo h1 {
-  font-family: $tipografiaPrimaria;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;  /*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
-  width: 22ch;
-  animation: typing 2s steps(22), parpadeo 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;  /*border-right: 3px solid;*/
+  h1 {
+    font-family: $tipografiaPrimaria;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;  /*ANIMACION MAQUINA DE ESCRIBIR ADAPTADA A MI DISEÑO*/
+    width: 22ch;
+    animation: typing 2s steps(22), parpadeo 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;  /*border-right: 3px solid;*/
+    }
 }
 
 @keyframes typing {
@@ -29,17 +29,17 @@
   }
 
 }
-
 /*FIN ANIMACION MAQUINA DE ESCRIBIR*/
-.subtitulos h3 {
-  font-size: 25px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
 
 .subtitulos {
   text-align: center;
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
 }
 
 .subtitulosServicios h3 {
@@ -96,11 +96,10 @@
     width: 250px;
     height: auto;
   }
-
   /*FIN DEL IMPORTANTE*/
+
   .main_div-titulo h1 {
     font-size: 30px;
-    padding-top: 50px;
   }
 
   .main_div-botones {
@@ -121,15 +120,30 @@
     background-color: $colorPrincipal;
   }
 
-  .subtitulosPortafolio h3 {
-    font-size: 20px;
-    text-align: center;
+  .botonPortafolio {
+    @extend .botonMobileIndex;
+    background-color: #89c9b2;
+  }
+
+  .botonSobreMi {
+    @extend .botonMobileIndex;
+    background-color: #a3d3c2;
+  }
+
+  .botonContacto{
+    @extend .botonMobileIndex;
+    background-color: $colorTerciario;
   }
 
   .subtitulosPortafolio {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+      }
   }
 
   /*FIN PESTAÑA SERVICIOS*/
