@@ -8,7 +8,9 @@ $tipografiaPrimaria: 'Girassol', cursiva;
 $tipografiaSecundaria: 'Roboto', sans-serif;
 
 /*MAPS*/
+
 $alineacion:(
   justificadoDer: flex-end,
-  centrar: center
+  centrar: center,
+  posicion: relative
   );

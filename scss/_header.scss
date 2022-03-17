@@ -11,15 +11,7 @@ header nav ul li {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: map-get($alineacion,justificadorDer);
   margin-top: 30px;
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  margin: 10px;
-  }
 }
 
 a:hover {
@@ -32,7 +24,7 @@ a:hover {
 
 .logo {
   margin-left: 35px;
-  position: relative;
+  position: map-get($alineacion,posicion);
   bottom: -82px;
 }
 
@@ -50,7 +42,7 @@ a:hover {
   /*BOX MODELING Y UBICAR LOGO PARA VISTA MOBILE*/
   .logo {
     margin-left: 8px;
-    position: relative;
+    position: map-get($alineacion,posicion);
     bottom: -39px;
     width: 70px;
     height: auto;
@@ -63,7 +55,7 @@ a:hover {
   /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
   .collapse {
     display: flex;
-    justify-content:map-get($alineacion,justificadorDer);
+    justify-content: map-get($alineacion,justificadoDer);
   }
 
 }
@@ -74,7 +66,7 @@ a:hover {
   /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
   .navbar-collapse {
     display: flex;
-    justify-content:map-get($alineacion,justificadorDer);
+    justify-content: map-get($alineacion,justificadoDer);
   }
 
 }

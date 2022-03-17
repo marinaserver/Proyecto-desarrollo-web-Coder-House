@@ -1,0 +1,10 @@
+@mixin anchorEstilo($decorado,$color,$tamFuente,$margen){
+  text-decoration: $decorado;
+  color: $color;
+  font-size: $tamFuente;
+  margin: $margen;
+}
+
+.nav_ul-iconos a {
+  @include anchorEstilo(none,black,20px,10px);
+  }

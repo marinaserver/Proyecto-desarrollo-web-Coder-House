@@ -23,11 +23,6 @@ header nav ul li {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px; }
-  .nav_ul-iconos a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin: 10px; }
 
 a:hover {
   color: grey; }
@@ -58,13 +53,15 @@ a:hover {
     height: 100px; }
   /*PARA ALINEAR A LA DERECHA LA NAV EN MENU HAMB DE VISTA MOBILE*/
   .collapse {
-    display: flex; } }
+    display: flex;
+    justify-content: flex-end; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
   /*PARA ALINEAR A LA DERECHA LA NAV EN VISTA DESKTOP*/
   .navbar-collapse {
-    display: flex; } }
+    display: flex;
+    justify-content: flex-end; } }
 
 /*CENTRAR TITULO PARA ANIMACION*/
 .main_div-titulo {
@@ -268,3 +265,9 @@ footer div h3 {
     margin-left: 400px;
     margin-right: 400px;
     border-radius: 25px; } }
+
+.nav_ul-iconos a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 10px; }
