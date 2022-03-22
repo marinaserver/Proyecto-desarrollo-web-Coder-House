@@ -1,0 +1,122 @@
+/*GRIDS PESTAÑA SOBRE MI*/
+
+/*MEDIA QUERY DESKTOP*/
+@media only screen and (min-width: 1024px) {
+	.gridPadre_div-sobreMi{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	}
+
+	header{
+		grid-area: header;
+	}
+	
+	main{
+		grid-area: main;
+	}
+
+	footer{
+		grid-area: footer;
+	}
+
+	.mainGrid{
+		display: grid;
+		grid-template-areas:
+		"mainGridTitulo mainGridTitulo mainGridTitulo"
+		"mainGrid1 mainGrid2 mainGrid3";
+
+	}
+
+	.mainGridTitulo{
+		grid-area: mainGridTitulo;
+	}
+
+	.mainGrid1{
+		grid-area: mainGrid1;
+	}
+
+	.mainGrid2{
+		grid-area: mainGrid2;
+	}
+
+	.mainGrid3{
+		grid-area: mainGrid3;
+	}
+
+	.footerGrid{
+		display: grid;
+		grid-template-areas:
+		"footerGrid1 footerGrid2 footerGrid3";
+	}
+
+	.footerGrid1{
+		grid-area: footerGrid1;
+	}
+
+	.footerGrid2{
+		grid-area: footerGrid2;
+	}
+
+	.footerGrid3{
+		grid-area: footerGrid3;
+	}
+
+}
+
+/*BOX MODELING PESTAÑA SOBRE MI*/
+.fotoCV{
+	width: 150px;
+	height: auto;
+}
+
+@media only screen and (max-width:768px) {
+
+	.gridPadre_div-sobreMi{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	}
+
+	header{
+		grid-area: header;
+	}
+	
+	main{
+		grid-area: main;
+	}
+
+	footer{
+		grid-area: footer;
+	}
+
+	.mainGrid{
+		display: grid;
+		grid-template-areas:
+		"mainGridTitulo mainGridTitulo"
+		"mainGrid1 mainGrid2"
+		"mainGrid3 mainGrid3";
+
+	}
+
+	.mainGridTitulo{
+		grid-area: mainGridTitulo;
+	}
+
+	.mainGrid1{
+		grid-area: mainGrid1;
+	}
+
+	.mainGrid2{
+		grid-area: mainGrid2;
+	}
+
+	.mainGrid3{
+		grid-area: mainGrid3;
+	}
+}
+

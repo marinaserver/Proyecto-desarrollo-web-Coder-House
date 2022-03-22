@@ -12,7 +12,7 @@
   background-image: linear-gradient(30deg, #70C1A7, #bae2d3, #D5EDE5, white); }
 
 .header {
-  background-color: lightgrey;
+  background-color: #70C1A7;
   height: 190px; }
 
 header nav ul li {
@@ -28,7 +28,7 @@ a:hover {
   color: grey; }
 
 .bg-light {
-  background-color: lightgrey !important; }
+  background-color: #70C1A7 !important; }
 
 .logo {
   margin-left: 35px;
@@ -115,12 +115,6 @@ a:hover {
   width: 200px;
   height: auto; }
 
-.main_contacto {
-  margin-left: 2%; }
-
-.contacto_main-h3 {
-  margin: 40px 0px 10px 0px; }
-
 .centrarImgUx {
   display: flex;
   justify-content: center; }
@@ -187,13 +181,15 @@ a:hover {
     display: none; }
   .iconosUxDesktop {
     width: 600px;
-    height: auto; } }
+    height: auto; }
+  /*PESTAÑA CONTACTO*/
+  .tituloContacto {
+    margin-bottom: 40px; }
+  .iconoRedesContacto {
+    height: 60px;
+    width: auto;
+    margin: 40px; } }
 
-/*VER PORQUE NO ANDA EL FONDO DEL FOOTER
-.footer{
-    background-image: url("..assets/img/fondoIconosVECTORIAL.png");
-    background-size: cover;
-}*/
 footer div h3 {
   text-align: center;
   margin-top: 20px;
@@ -271,3 +267,63 @@ footer div h3 {
   color: black;
   font-size: 20px;
   margin: 10px; }
+
+/*GRIDS PESTAÑA SOBRE MI*/
+/*MEDIA QUERY DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  .gridPadre_div-sobreMi {
+    display: grid;
+    grid-template-areas: "header" "main" "footer"; }
+  header {
+    grid-area: header; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; }
+  .mainGrid {
+    display: grid;
+    grid-template-areas: "mainGridTitulo mainGridTitulo mainGridTitulo" "mainGrid1 mainGrid2 mainGrid3"; }
+  .mainGridTitulo {
+    grid-area: mainGridTitulo; }
+  .mainGrid1 {
+    grid-area: mainGrid1; }
+  .mainGrid2 {
+    grid-area: mainGrid2; }
+  .mainGrid3 {
+    grid-area: mainGrid3; }
+  .footerGrid {
+    display: grid;
+    grid-template-areas: "footerGrid1 footerGrid2 footerGrid3"; }
+  .footerGrid1 {
+    grid-area: footerGrid1; }
+  .footerGrid2 {
+    grid-area: footerGrid2; }
+  .footerGrid3 {
+    grid-area: footerGrid3; } }
+
+/*BOX MODELING PESTAÑA SOBRE MI*/
+.fotoCV {
+  width: 150px;
+  height: auto; }
+
+@media only screen and (max-width: 768px) {
+  .gridPadre_div-sobreMi {
+    display: grid;
+    grid-template-areas: "header" "main" "footer"; }
+  header {
+    grid-area: header; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; }
+  .mainGrid {
+    display: grid;
+    grid-template-areas: "mainGridTitulo mainGridTitulo" "mainGrid1 mainGrid2" "mainGrid3 mainGrid3"; }
+  .mainGridTitulo {
+    grid-area: mainGridTitulo; }
+  .mainGrid1 {
+    grid-area: mainGrid1; }
+  .mainGrid2 {
+    grid-area: mainGrid2; }
+  .mainGrid3 {
+    grid-area: mainGrid3; } }

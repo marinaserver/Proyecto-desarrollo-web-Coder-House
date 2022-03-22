@@ -1,8 +1,4 @@
-/*VER PORQUE NO ANDA EL FONDO DEL FOOTER
-.footer{
-    background-image: url("..assets/img/fondoIconosVECTORIAL.png");
-    background-size: cover;
-}*/
+
 footer div h3 {
   text-align: map-get($alineacion,centrar);
   margin-top: 20px;
@@ -69,7 +65,7 @@ footer div h3 {
 
   .fooLogosRedes {
     margin-top: 60px;
-    background-color: $colorTerciario;
+    background-color: $colorSecundario;
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 50px;
@@ -88,7 +84,7 @@ footer div h3 {
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width:1024px) {
   .fooLogosRedes {
-    background-color: $colorTerciario;
+    background-color: $colorSecundario;
     margin-left: 400px;
     margin-right: 400px;
     border-radius: 25px;

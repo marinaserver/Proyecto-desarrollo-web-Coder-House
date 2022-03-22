@@ -63,14 +63,6 @@
   height: auto;
 }
 
-.main_contacto {
-  margin-left: 2%;
-}
-
-.contacto_main-h3 {
-  margin: 40px 0px 10px 0px;
-}
-
 .centrarImgUx {
   display: flex;
   justify-content: map-get($alineacion,centrar);
@@ -135,7 +127,7 @@
 
   .botonContacto{
     @extend .botonMobileBase;
-    background-color: $colorTerciario;
+    background-color: $colorSecundario;
   }
 
   .subtitulosPortafolio {
@@ -182,6 +174,17 @@
   .iconosUxDesktop {
     width: 600px;
     height: auto;
+  }
+
+  /*PESTAÑA CONTACTO*/
+  .tituloContacto{
+    margin-bottom: 40px;
+  }
+
+  .iconoRedesContacto{
+    height: 60px;
+    width: auto;
+    margin: 40px;
   }
 
 }
