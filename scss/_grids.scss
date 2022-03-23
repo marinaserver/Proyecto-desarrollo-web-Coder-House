@@ -8,6 +8,8 @@
 		"header"
 		"main"
 		"footer";
+		grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
 	}
 
 	header{
@@ -27,15 +29,26 @@
 		grid-template-areas:
 		"mainGridTitulo mainGridTitulo mainGridTitulo"
 		"mainGrid1 mainGrid2 mainGrid3";
-
+        grid-column-gap: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
 	}
 
 	.mainGridTitulo{
 		grid-area: mainGridTitulo;
+		margin-bottom: 50px;
 	}
 
 	.mainGrid1{
 		grid-area: mainGrid1;
+		display: flex;
+		justify-content: map-get($alineacion,centrar);
+		margin-left: 90px;
+	}
+
+	.fotoCV{
+	width: 150px;
+	height: auto;
 	}
 
 	.mainGrid2{
@@ -50,6 +63,10 @@
 		display: grid;
 		grid-template-areas:
 		"footerGrid1 footerGrid2 footerGrid3";
+		grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto;
+        display: flex;
+  		justify-content: map-get($alineacion,centrar);
 	}
 
 	.footerGrid1{
@@ -67,12 +84,16 @@
 }
 
 /*BOX MODELING PESTAÑA SOBRE MI*/
-.fotoCV{
-	width: 150px;
-	height: auto;
+
+.misEstudios{
+	text-align: center;
 }
 
 @media only screen and (max-width:768px) {
+
+	.parrafoMobile{
+	font-size: 13px;
+}
 
 	.gridPadre_div-sobreMi{
 		display: grid;
@@ -80,6 +101,8 @@
 		"header"
 		"main"
 		"footer";
+		grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
 	}
 
 	header{
@@ -94,22 +117,40 @@
 		grid-area: footer;
 	}
 
+	.headerGrid{
+		display: grid;
+		grid-template-areas:
+		"headerGrid1";
+		grid-template-columns: 100%;
+        grid-template-rows: auto;
+	}
+
 	.mainGrid{
 		display: grid;
 		grid-template-areas:
 		"mainGridTitulo mainGridTitulo"
 		"mainGrid1 mainGrid2"
 		"mainGrid3 mainGrid3";
+		grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        margin-left: 20px;
+        margin-right: 20px;
 
 	}
 
 	.mainGridTitulo{
 		grid-area: mainGridTitulo;
+		margin-bottom: 40px;
 	}
 
 	.mainGrid1{
 		grid-area: mainGrid1;
 	}
+
+	.fotoCV{
+	width: 130px;
+	height: auto;
+}
 
 	.mainGrid2{
 		grid-area: mainGrid2;

@@ -176,15 +176,36 @@
     height: auto;
   }
 
-  /*PESTAÑA CONTACTO*/
+ /*BOX MODELING PESTAÑA CONTACTO*/
   .tituloContacto{
     margin-bottom: 40px;
   }
-
+  
   .iconoRedesContacto{
     height: 60px;
     width: auto;
     margin: 40px;
   }
 
+  .redesContacto{
+  display: flex;
+  justify-content: map-get($alineacion,centrar);
+  }
+
+   .botonPcontacto{
+    margin: 20px;
+    width: 100px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: $colorTerciario;
+   }
+
+   .subtitulosContacto{
+    font-size: 20px;
+    text-align: map-get($alineacion,centrar);
+   }
+
+   .margenMapa{
+    margin-top: 45px;
+   }
 }
