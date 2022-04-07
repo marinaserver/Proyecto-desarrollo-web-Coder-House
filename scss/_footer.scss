@@ -21,42 +21,6 @@ footer div h3 {
   padding: 25px;
 }
 
-/*ANIMACIONES ICONOS REDES SOCIALES*/
-.animacionLK {
-  height: 100px;
-  width: auto;
-  transition: height 0.5s;
-}
-
-.animacionLK:hover {
-  height: 120px;
-  width: auto;
-}
-
-.animacionIG {
-  height: 100px;
-  width: auto;
-  transition: height 0.5s;
-}
-
-.animacionIG:hover {
-  height: 120px;
-  width: auto;
-}
-
-.animacionBH {
-  height: 100px;
-  width: auto;
-  transition: height 0.5s;
-}
-
-.animacionBH:hover {
-  height: 120px;
-  width: auto;
-}
-
-/*FIN ANIMACION ICONOS REDES SOCIALES*/
-
 /*MEDIA QUERIE MOBILE*/
 @media only screen and (max-width:768px) {
   footer div h3 {
@@ -89,5 +53,41 @@ footer div h3 {
     margin-right: 400px;
     border-radius: 25px;
   }
+
+  /*ANIMACIONES ICONOS REDES SOCIALES*/
+.animacionLK {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionLK:hover {
+  height: 110px;
+  width: auto;
+}
+
+.animacionIG {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionIG:hover {
+  height: 110px;
+  width: auto;
+}
+
+.animacionBH {
+  height: 100px;
+  width: auto;
+  transition: height 0.5s;
+}
+
+.animacionBH:hover {
+  height: 110px;
+  width: auto;
+}
+
+/*FIN ANIMACION ICONOS REDES SOCIALES*/
 
 }
