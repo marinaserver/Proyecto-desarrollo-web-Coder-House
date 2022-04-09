@@ -130,6 +130,8 @@ a:hover {
   /*IMPORTANTE PARA QUE NO SE ROMPA EL MOBILE*/
   .iconosUxDesktop {
     display: none; }
+  main {
+    z-index: 0; }
   .iconosUxMobile {
     width: 250px;
     height: auto; }
