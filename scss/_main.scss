@@ -46,23 +46,6 @@
   background-color: $colorPrincipal;
 }
 
-.imgComuna {
-  width: 200px;
-  height: auto;
-  padding-top: 25px;
-}
-
-.logoFactor50 {
-  width: 200px;
-  height: auto;
-  padding-top: 45px;
-}
-
-.logoPeya {
-  width: 200px;
-  height: auto;
-}
-
 .centrarImgUx {
   display: flex;
   justify-content: map-get($alineacion,centrar);
@@ -179,7 +162,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     /*Ver porque no se me aplica el width a los botones*/
-    width: 75;
+    width: 75px;
     height: 27px;
     border-radius: 5px;
     background-color: $colorTerciario;
@@ -199,6 +182,20 @@
    .altoElementosMobile{
     height: 75px;
    }
+
+      .carousel-image {
+    width: auto;
+    height: 160px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .subtitulosPortfolio{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: map-get($alineacion,centrar);
+    margin-top: 55px;
+  }
 
 }
 
@@ -251,4 +248,18 @@
    .margenMapa{
     margin-top: 45px;
    }
+
+      .carousel-image {
+    width: auto;
+    height: 250px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+  }
 }
+
+/*CAROUSEL PORTAFOLIO*/
+
+ .center-carousel-item {
+  display: flex;
+  justify-content: center;
+ }

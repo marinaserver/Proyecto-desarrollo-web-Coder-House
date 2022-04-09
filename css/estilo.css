@@ -115,20 +115,6 @@ a:hover {
   border-radius: 10px;
   background-color: #70C1A7; }
 
-.imgComuna {
-  width: 200px;
-  height: auto;
-  padding-top: 25px; }
-
-.logoFactor50 {
-  width: 200px;
-  height: auto;
-  padding-top: 45px; }
-
-.logoPeya {
-  width: 200px;
-  height: auto; }
-
 .centrarImgUx {
   display: flex;
   justify-content: center; }
@@ -201,7 +187,7 @@ a:hover {
     margin-right: 20px;
     margin-bottom: 20px;
     /*Ver porque no se me aplica el width a los botones*/
-    width: 75;
+    width: 75px;
     height: 27px;
     border-radius: 5px;
     background-color: #b7b7b7; }
@@ -213,7 +199,17 @@ a:hover {
   .margenMapa {
     margin: 20px; }
   .altoElementosMobile {
-    height: 75px; } }
+    height: 75px; }
+  .carousel-image {
+    width: auto;
+    height: 160px;
+    padding-top: 25px;
+    margin-bottom: 50px; }
+  .subtitulosPortfolio {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 55px; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
@@ -245,7 +241,17 @@ a:hover {
     font-size: 20px;
     text-align: center; }
   .margenMapa {
-    margin-top: 45px; } }
+    margin-top: 45px; }
+  .carousel-image {
+    width: auto;
+    height: 250px;
+    padding-top: 25px;
+    margin-bottom: 50px; } }
+
+/*CAROUSEL PORTAFOLIO*/
+.center-carousel-item {
+  display: flex;
+  justify-content: center; }
 
 footer div h3 {
   text-align: center;
@@ -280,7 +286,9 @@ footer div h3 {
     margin: 5px;
     padding: 5px;
     height: 45px;
-    width: auto; } }
+    width: auto; }
+  .bodyPortafolio {
+    overflow-y: hidden; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
