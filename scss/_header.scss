@@ -1,4 +1,5 @@
 .header {
+  z-index: 1;
   background-color: $colorPrincipal;
   height: 190px;
 }
@@ -36,7 +37,7 @@ a:hover {
 
 /*PARA QUE LA NAV AL DESPLEGAR NO SE SUPERPONGA CON EL MAIN*/
   .navbar {
-    z-index: 1;
+    z-index: 2;
   }
 
   /*BOX MODELING Y UBICAR LOGO PARA VISTA MOBILE*/
