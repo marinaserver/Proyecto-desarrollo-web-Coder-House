@@ -8,8 +8,7 @@
   font-family: "Roboto", sans-serif; }
 
 .body {
-  overflow-x: hidden;
-  /*background-image: linear-gradient(30deg, $colorPrincipal, $colorSecundario, #D5EDE5, white);*/ }
+  overflow-x: hidden; }
 
 body {
   background: linear-gradient(-45deg, #70C1A7, #70C1A7, white, #44bca5);
@@ -26,6 +25,7 @@ body {
     background-position: 0% 50%; } }
 
 .header {
+  z-index: 1;
   background-color: #70C1A7;
   height: 190px; }
 
@@ -55,7 +55,7 @@ a:hover {
     display: none; }
   /*PARA QUE LA NAV AL DESPLEGAR NO SE SUPERPONGA CON EL MAIN*/
   .navbar {
-    z-index: 1; }
+    z-index: 2; }
   /*BOX MODELING Y UBICAR LOGO PARA VISTA MOBILE*/
   .logo {
     margin-left: 8px;
@@ -283,7 +283,11 @@ footer div h3 {
     height: 45px;
     width: auto; }
   .bodyPortafolio {
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+  .container-fluid {
+    height: 100%; }
+  .footerPortafolio {
+    margin-top: 128px; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
