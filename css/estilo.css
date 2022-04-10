@@ -283,7 +283,11 @@ footer div h3 {
     height: 45px;
     width: auto; }
   .bodyPortafolio {
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+  .container-fluid {
+    height: 100%; }
+  .footerPortafolio {
+    margin-top: 128px; } }
 
 /*MEDIA QUERIE DESKTOP*/
 @media only screen and (min-width: 1024px) {
